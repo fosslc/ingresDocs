@@ -1,0 +1,54 @@
+#
+# MANIFEST file for tools!techpub!pdf
+#
+## History:
+##    28-Jul-2004 (hanje04)
+##        Created.
+##    30-Jul-2004 (hanje04)
+##	  Add IISUBSYS rule and include sub directories
+##    31-Jan-2005 (drivi01)
+##	  Documentation moved to tools/techpub/pdf/ing302,
+##	  all manifest files were branched to corresponding
+##	  directories. pdf files got renamed.
+##    08-Aug-2005 (drivi01)
+##	  Added another guide to the list.
+##    02-Feb-2006 (drivi01)
+##	  Bug #115698 
+##	  Documentation from large documentation set was renamed
+##	  to reflect contents of each guide, index was also modified
+##	  reducing the amount of directories shipped.  
+##    03-Feb-2006 (drivi01)
+##	  Updated INDEX.pdx to index.pdx.
+##    02-Oct-2006 (drivi01)
+##	  gs.pdf and gs-linux.pdf removed from build.
+##	  qs.pdf and embed.pdf are added.
+##    25-Oct-2006 (bonro01)
+##        Update documentation for Ingres 2006 Release 2
+##    29-Nov-2006 (bonro01)
+##        Update documentation for Ingres 2006 Release 2
+##    11-Jul-2007 (bonro01)
+##        Update documentation for Ingres 2006 Release 3
+##    27-Aug-2008 (drivi01)
+##	  All the guides have been renamed to follow the new
+##	  naming convention. Index directory "ingres" was
+##	  renamed to "ING_INDEX".
+##    21-Oct-2008 (bonro01)
+##        Correct ING_INDEX directory case.
+##	  
+##
+
+
+SubDir ING_SRC tools techpub pdf ;
+
+IISUBSYS tools techpub pdf ;
+
+IIDFILES english : Ing_Bookshelf.pdf ING_INDEX.PDX CommandRef.pdf
+	Connectivity.pdf DatabaseAdmin.pdf DistTransProcUser.pdf 
+	EmbedQUEL.pdf EmbedSQL.pdf FormAppDevUser.pdf
+	IntPerfMonUser.pdf Migration.pdf OpenAPIUser.pdf
+	ObjMgmtExtUser.pdf Ing_Install.pdf OpenSQLRef.pdf 
+	CharQueryRepUser.pdf QUELRef.pdf ReplicatorUser.pdf
+  	Ing_RelSum.pdf SQLRef.pdf StarUser.pdf SysAdmin.pdf
+	QuickStart_Linux.pdf QuickStart_Win.pdf Security.pdf ;
+
+IIINCLUDE tools techpub pdf ING_INDEX ;

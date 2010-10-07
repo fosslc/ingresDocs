@@ -1,0 +1,10 @@
+#
+# Jamfile file for tools!techpub!pdf!ing_index
+#
+
+SubDir ING_SRC tools techpub pdf ING_INDEX ;
+
+IISUBSYS tools techpub pdf ING_INDEX ;
+
+IIDFILES english$(SLASH)ING_INDEX : index.idx index1.idx ;
+
